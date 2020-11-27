@@ -1,0 +1,127 @@
+#intro {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  margin: 0;
+}
+#darkmode {
+  background: -webkit-linear-gradient(120deg, #cfcbc4 30%, #cececf 30%);
+  width: 100vw;
+  padding-top: 1px;
+  transition-duration: 500ms;
+  transition-property: filter;
+}
+@keyframes s {
+  0% {
+    content: "FARAGI Ayoub's Portfilio";
+  }
+  50% {
+    color: #acad9c;
+  }
+  100% {
+    content: "F42491 4y0u8'5 P027f0110";
+  }
+}
+
+#hdname {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#hdname::after {
+  content: "FARAGI Ayoub's Portfilio";
+  animation: s 6s linear infinite alternate;
+}
+#header {
+  width: 100%;
+  height: 100px;
+  color: black;
+}
+#list {
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#itsemlist {
+  display: inline-block;
+}
+#itemlist1 {
+  display: inline-block;
+  margin-right: auto;
+}
+
+#dmode {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  text-align: center;
+  background: -webkit-linear-gradient(180deg, #cfcbc446 50%, #0000006b 50%);
+  color: black;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  transition-property: width, height;
+  transition-duration: 200ms;
+}
+
+#logo:hover {
+  width: 60px;
+  height: 60px;
+}
+
+#body {
+  width: 100vw;
+  transition-duration: 500ms;
+  transition-property: filter;
+}
+
+#aboutme {
+  width: 60%;
+  height: 100vh;
+}
+
+p {
+  font-family: "Josefin Slab", serif;
+  font-size: 30px;
+}
+
+#slidli {
+  display: none;
+}
+
+#slid {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  transition-duration: 500ms;
+  transition-property: background;
+  text-align: center;
+  background-color: #cfcbc4;
+  color: black;
+}
+#slid:hover {
+  background: -webkit-linear-gradient(140deg, #fdc2004f 30%, #cececf 100%);
+}
+@media screen and (max-width: 650px) {
+  #itemlist {
+    display: none;
+  }
+  #slidli {
+    display: inline-block;
+  }
+}
