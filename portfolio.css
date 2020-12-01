@@ -1,13 +1,20 @@
 #intro {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-body {
+body,
+html {
   margin: 0;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 #darkmode {
   background: -webkit-linear-gradient(120deg, #cfcbc4 30%, #cececf 30%);
-  width: 100vw;
+  min-width: 100vw;
+  min-height: 100%;
   padding-top: 1px;
+  padding-bottom: 1px;
   transition-duration: 500ms;
   transition-property: filter;
 }
@@ -44,12 +51,15 @@ body {
   justify-content: space-evenly;
 }
 
-#itsemlist {
+#itemlist {
   display: inline-block;
 }
 #itemlist1 {
   display: inline-block;
   margin-right: auto;
+}
+#itemlists {
+  display: inline-block;
 }
 
 #dmode {
@@ -70,24 +80,23 @@ body {
   width: 50px;
   height: 50px;
   margin: 10px;
-  transition-property: width, height;
+  transition-property: filter;
   transition-duration: 200ms;
 }
 
 #logo:hover {
-  width: 60px;
-  height: 60px;
+  filter: drop-shadow(8px 8px 5px gray);
 }
 
 #body {
   width: 100vw;
+  height: 100%;
   transition-duration: 500ms;
   transition-property: filter;
 }
 
 #aboutme {
   width: 60%;
-  height: 100vh;
 }
 
 p {
@@ -95,33 +104,35 @@ p {
   font-size: 30px;
 }
 
-#slidli {
+#contactme {
   display: none;
 }
 
-#slid {
-  width: 100px;
-  height: 40px;
-  margin: 20px;
-  border-radius: 20px;
-  outline: none;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 15px;
-  border-style: solid;
-  transition-duration: 500ms;
-  transition-property: background;
-  text-align: center;
-  background-color: #cfcbc4;
-  color: black;
-}
-#slid:hover {
-  background: -webkit-linear-gradient(140deg, #fdc2004f 30%, #cececf 100%);
-}
 @media screen and (max-width: 650px) {
   #itemlist {
     display: none;
   }
-  #slidli {
+  #contactme {
     display: inline-block;
   }
+}
+
+#projects {
+  width: 60%;
+}
+#project {
+  display: block;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  transition-duration: 300ms;
+  transition-property: all;
+  color: black;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+#project:hover {
+  background-color: #75746c46;
+  color: #ded7c1;
 }
