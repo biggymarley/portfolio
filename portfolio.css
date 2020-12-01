@@ -119,6 +119,9 @@ p {
 
 #projects {
   width: 60%;
+  position: relative;
+  overflow: hidden;
+
 }
 #project {
   display: block;
@@ -132,7 +135,17 @@ p {
   border-radius: 20px;
 }
 
-#project:hover {
-  background-color: #75746c46;
-  color: #ded7c1;
+#project:hover + #line {
+  transform: translateX(+100%);
+}
+#line
+{
+  width: 100%;
+  position: absolute;
+  height: 5px;
+  background-color: #626466;
+  left: -100%;
+  transition-duration: 300ms;
+  transition-property: transform;
+
 }
