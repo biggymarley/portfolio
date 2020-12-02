@@ -153,7 +153,7 @@ p {
 {
   width: 100px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.151);
+  background-color:#acad9c;
   border-radius: 20px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   outline-style: none;
@@ -162,8 +162,7 @@ p {
 }
 #ball
 {
-  background-image: url(./img/moon.png);
-  background-color: rgba(250, 250, 250);
+  background-color: #acad9c;
   background-size: 40px 40px;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,9 +178,4 @@ p {
   box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   transition: all 200ms ease-in-out;
-}
-#toggle:checked + #ball
-{
-  background-image: url(./img/sun.png);
-  
 }
