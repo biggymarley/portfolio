@@ -4,16 +4,14 @@
 body , html {
   min-height: 100%;
   margin: 0;
-  list-style: none;
-}
-#darkmode {
   background: -webkit-linear-gradient(120deg, #cfcbc4 30%, #cececf 30%);
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 1px;
+  list-style: none;
   transition-duration: 500ms;
   transition-property: filter;
+}
+#darkmode {
+  width: 100%;
+  height: 100%;
 }
 @keyframes s {
   0% {
@@ -37,6 +35,7 @@ body , html {
 }
 #header {
   width: 100%;
+  padding-top: 1px;
   height: 100px;
   color: black;
 }
@@ -46,10 +45,6 @@ body , html {
   list-style: none;
   align-items: center;
   justify-content: space-evenly;
-}
-
-#itemlist {
-  display: inline-block;
 }
 #itemlist1 {
   display: inline-block;
@@ -102,16 +97,16 @@ p {
 }
 
 #contactme {
-  display: none;
+  display: inline-block;
 }
 
 @media screen and (max-width: 650px) {
   #itemlist {
     display: none;
   }
-  #contactme {
+  /* #contactme {
     display: inline-block;
-  }
+  } */
 }
 
 #projects {
@@ -145,4 +140,48 @@ p {
   transition-duration: 300ms;
   transition-property: transform;
 
+}
+#itemlistd
+{
+  margin: 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+
+}
+#toggle
+{
+  width: 100px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.151);
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  outline-style: none;
+  -webkit-appearance: none;
+  transition: all 400ms ease;
+}
+#ball
+{
+  background-image: url(./img/moon.png);
+  background-color: rgb(250, 250, 250);
+  background-size: 50px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+  pointer-events: none;
+  height: 50px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+#toggle:checked + #ball
+{
+  background-image: url(./img/sun.png);
+  
 }

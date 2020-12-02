@@ -11,14 +11,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&display=swap" rel="stylesheet">
     <title>About Ayoub Faragi</title>
   </head>
-  <body>
+  <body id="all">
     <div id="darkmode">
       <div id="header">
         <ul id="list">
           <li id="itemlist1">
             <h3 id="hdname"></h3>
           </li>
-          <li id="itemlist">
+          <!-- <li id="itemlist">
             <a href="https://github.com/biggymarley">
               <img id="logo" src="img/gitlogo.png" />
             </a>
@@ -27,9 +27,12 @@
             <a href="https://www.linkedin.com/in/ayoub-faragi-89518a1b8/">
               <img id="logo" src="img/lnlogo.png" />
             </a>
-          </li>
+          </li> -->
           <li id="itemlistd">
-            <input type="button" id="dmode" onclick="darkmode()" value="Dark">
+            <input type="checkbox" id="toggle" onclick="darkmode()" value="Dark">
+            <div id="ball">
+              <!-- <img id="sun" src="img/sun.png" /> -->
+            </div>
           </li>
         </ul>
       </div>
@@ -41,7 +44,7 @@
             </h1>
           </br></br></br></br></br></br></br></br></br></br>
             <h1 id="intro">
-              — I'm a Fullstack Developer & Designer.
+              - I'm a Fullstack Developer & Designer.
             </h1>
             <p>
               I'm a student from 1337, a pretty cool computer science school from the 42 Network located in  Khouribga, Morocco.
@@ -54,7 +57,7 @@
       </br></br></br>
         <center>
             <h1 id="intro" style="margin-right: auto;">
-              — My Projects.
+              - My Projects.
             </h1>
             <div id="projects">
               <a id="project" href="https://github.com/biggymarley/Minishell_1337">- Minishell :</a>
@@ -73,13 +76,12 @@
                 The ls command is one of the most used commands. Perhaps you have already asked yourself how is this
                 function coded? Thanks to this project, you will soon find out.
               </p>
-
           </div>
         </center>
         <center>
           <div id="contactme">
               <h1 id="intro">
-                — Contact Me.
+                - Contact Me.
               </h1>
               <li id="itemlists">
                 <a href="https://github.com/biggymarley">
@@ -91,9 +93,13 @@
                   <img id="logo" src="img/lnlogo.png" />
                 </a>
               </li>
+              <li id="itemlists">
+                <a href="mailto:afaragi@student.1337.ma">
+                  <img id="logo" src="img/send.png" />
+                </a>
+              </li>
             </div>
           </center>
-          
     </div>
   </body>
   <script src="portfolio.js">
