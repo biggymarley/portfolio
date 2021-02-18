@@ -4,7 +4,7 @@
 body , html {
   min-height: 100%;
   margin: 0;
-  background: -webkit-linear-gradient(120deg, #cfcbc4 30%, #cececf 30%);
+  background: url("img/skulls.png");
   list-style: none;
   transition-duration: 500ms;
   transition-property: filter;
