@@ -58,6 +58,14 @@ body , html {
   display: inline-block;
 }
 
+p{
+  font-family: 'Kreon', serif !important;
+}
+/* h1{
+  font-family: 'Imbue', serif !important;
+} */
+
+
 #dmode {
   width: 100px;
   height: 40px;
