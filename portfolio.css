@@ -35,6 +35,9 @@ body , html {
 }
 #header {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 1px;
   height: 100px;
   color: black;
@@ -42,6 +45,7 @@ body , html {
 #list {
   padding: 10px;
   display: flex;
+  width: 100%;
   list-style: none;
   align-items: center;
   justify-content: space-evenly;
@@ -163,7 +167,7 @@ p {
 #ball
 {
   background-color: #acad9c;
-  background-size: 30px 30px;
+  background-size: 25px 25px;
   background-image: url(./img/sun.png);
   background-position: center;
   background-repeat: no-repeat;
